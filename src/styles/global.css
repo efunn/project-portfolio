@@ -1,0 +1,49 @@
+@layer reset, variables, global, custom;
+
+@layer global {
+
+  header {
+    z-index: 999;
+    top: 0;
+    position: sticky;
+  }
+
+  h1,
+  h2 {
+    color: light-dark(var(--color-black), var(--color-white));
+    font-family: "Roboto Condensed Variable", sans-serif;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: var(--step-5);
+  }
+  h2 {
+    font-size: var(--step-3);
+  }
+
+  a,
+  blockquote,
+  ul,
+  ol,
+  p {
+    font-family: "Inter Variable", sans-serif;
+    font-size: var(--step-0);
+    hyphens: none;
+  }
+
+  a:hover {
+    text-decoration: underline wavy;
+  }
+
+  a::after {
+    display:inline-block;
+    content: "↗";
+    transition: all 0.25s;
+  }
+
+  a:hover::after { 
+    transform: translate(0.15rem,-0.15rem);
+   }
+}
+

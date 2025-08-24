@@ -1,4 +1,20 @@
 ---
+import "@styles/global.css";
+import "@styles/custom.css";
+import "@styles/variables.css";
+import "@styles/reset.css";
+import '@fontsource-variable/inter';
+import '@fontsource-variable/roboto-condensed';
+
+import Project from '@components/Project.astro';
+
+import * as currentProjectDetails from '@projects/robotic-finger-interface.md'
+
+const icons = Object.values(import.meta.glob('@icons/*.svg',{ eager: true }));
+const MyIcon = icons.find(icon => icon.default.src.includes('robot')).default;
+
+const posts = Object.values(import.meta.glob("@projects/*.md", { eager: true }));
+const MyPost = posts.find(post => post.file.includes("robotic"));
 
 ---
 
@@ -8,9 +24,21 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Ethan's Projects</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+	<div class="wrapper">
+		<header>
+			<div class="tab">
+			  <input type="radio" name="projects" id="p1" checked/>
+			  	<label for="p1" class="tab__label">
+				  <h1>Hi Ethan, I need...</h1>
+				</label>
+			</div>
+		</header>
+		<body>
+			<Project name="project-1" />
+			<Project name="project-2" />
+			<Project name="project-3" />
+		</body>
+	</div>
 </html>

@@ -1,0 +1,46 @@
+@layer reset, variables, global, custom;
+
+@layer custom {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 0 var(--space-s);
+  }
+
+  .tab input {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .tab__label {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-3xs);
+    font-size: var(--step-3);
+    cursor: pointer;
+    color: light-dark(var(--color-black), var(--color-white));
+    font-family: "Roboto Condensed Variable", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .tab__content {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .tab input:checked ~ .tab__content {
+    max-height: none;
+  }
+
+  .tab {
+    font-family: "Inter Variable", sans-serif;
+    font-size: var(--step-1);
+    display: grid;
+  }
+
+  .logo-color {
+    color: var(--color-green);
+  }
+}

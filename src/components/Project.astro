@@ -1,0 +1,24 @@
+---
+interface Props {
+  name: string;
+}
+
+const projectName = Astro.props.name;
+
+const allProjects = Object.values(import.meta.glob("@projects/*.md", { eager: true }));
+const currentProject = allProjects.find(proj => proj.file.includes(projectName));
+
+const allIcons = Object.values(import.meta.glob('@icons/*.svg',{ eager: true }));
+const CurrentIcon = allIcons.find(icon => icon.default.src.includes(currentProject.frontmatter.icon)).default; 
+---
+
+<div class="tab">
+  <input type="radio" name="projects" id={currentProject.frontmatter.id} />
+  <label for={currentProject.frontmatter.id} class="tab__label">
+    {currentProject.frontmatter.title}
+  </label>
+  <div class="tab__content">
+    <span class="logo-color"><CurrentIcon width={96}/></span> 
+    <currentProject.Content />
+  </div>
+</div>
