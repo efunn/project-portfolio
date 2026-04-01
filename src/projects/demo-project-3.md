@@ -1,6 +1,6 @@
 ---
 title: Third Project Description
-subtitle: Longer description of the project.
+subtitle: Longer description of the project
 id: p4
 icon: keyboard
 ---

@@ -1,6 +1,6 @@
 ---
 title: First Project Description
-subtitle: Longer description of the project.
+subtitle: Longer description of the project
 id: p2
 icon: robot
 ---

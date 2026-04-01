@@ -8,14 +8,6 @@ import '@fontsource-variable/roboto-condensed';
 
 import Project from '@components/Project.astro';
 
-import * as currentProjectDetails from '@projects/robotic-finger-interface.md'
-
-const icons = Object.values(import.meta.glob('@icons/*.svg',{ eager: true }));
-const MyIcon = icons.find(icon => icon.default.src.includes('robot')).default;
-
-const posts = Object.values(import.meta.glob("@projects/*.md", { eager: true }));
-const MyPost = posts.find(post => post.file.includes("robotic"));
-
 ---
 
 <html lang="en">
@@ -36,9 +28,11 @@ const MyPost = posts.find(post => post.file.includes("robotic"));
 			</div>
 		</header>
 		<body>
-			<Project name="project-1" />
-			<Project name="project-2" />
-			<Project name="project-3" />
+			<Project name="robot-keyboard" />
+			<Project name="instabrain" />
+			<Project name="mri-keyboard" />
+			<Project name="gain-twist-rifling" />
+			<Project name="vibrotactile-stimulators" />
 		</body>
 	</div>
 </html>

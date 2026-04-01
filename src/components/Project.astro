@@ -13,12 +13,21 @@ const CurrentIcon = allIcons.find(icon => icon.default.src.includes(currentProje
 ---
 
 <div class="tab">
-  <input type="radio" name="projects" id={currentProject.frontmatter.id} />
-  <label for={currentProject.frontmatter.id} class="tab__label">
-    {currentProject.frontmatter.title}
-  </label>
-  <div class="tab__content">
-    <span class="logo-color"><CurrentIcon width={96}/></span> 
-    <currentProject.Content />
-  </div>
+    <input type="radio" name="projects" id={currentProject.frontmatter.id} />
+    <label for={currentProject.frontmatter.id} class="tab__label">
+        <div class="tab-label-grid-container">
+            <div class="tab-label-icon">
+                <CurrentIcon width={96}/>
+            </div>
+            <div class="tab-title">
+                {currentProject.frontmatter.title}
+            </div>
+            <div class="tab-subtitle">
+                {currentProject.frontmatter.subtitle}
+            </div>
+        </div>
+    </label>
+    <div class="tab__content">
+        <currentProject.Content />
+    </div>
 </div>

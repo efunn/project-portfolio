@@ -2,14 +2,25 @@
 
 @layer global {
 
+  html {
+    background-color: light-dark(var(--color-white), var(--color-black));
+  }
+
   header {
     z-index: 999;
     top: 0;
     position: sticky;
+    background-color: light-dark(var(--color-white), var(--color-black));
+  }
+
+  body {
+    margin-top: 0;
+    overflow-y: scroll;
   }
 
   h1,
   h2 {
+    margin: 0;
     color: light-dark(var(--color-black), var(--color-white));
     font-family: "Roboto Condensed Variable", sans-serif;
     text-transform: uppercase;
@@ -17,6 +28,7 @@
 
   h1 {
     font-size: var(--step-5);
+    color: light-dark(var(--color-highlight-light), var(--color-highlight-dark));
   }
   h2 {
     font-size: var(--step-3);
@@ -30,6 +42,10 @@
     font-family: "Inter Variable", sans-serif;
     font-size: var(--step-0);
     hyphens: none;
+  }
+
+  a {
+    color: light-dark(var(--color-highlight-light), var(--color-highlight-dark));
   }
 
   a:hover {

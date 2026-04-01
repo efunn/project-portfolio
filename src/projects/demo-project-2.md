@@ -1,6 +1,6 @@
 ---
 title: Second Project Description
-subtitle: Longer description of the project.
+subtitle: Longer description of the project
 id: p3
 icon: instabrain 
 ---
