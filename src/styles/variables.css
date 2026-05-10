@@ -7,12 +7,14 @@
     /* Color */
     --color-purple-light: #e8c3f8;
     --color-purple-dark: purple;
-    --color-black: #0c0e14;
+    --color-black-bg: #0c0e14;
+    --color-black: #1e2227;
     --color-green: #2d6070;
     --color-grey-dark: #17191e;
     --color-grey-light: #bec0c8;
     --color-orange: #fe7d33;
-    --color-white: #f5f8fa;
+    --color-white-bg: #f5f8fa;
+    --color-white: #d1d6d9;
     --color-yellow: #ffd493;
     --color-highlight-dark: #f17e3d;
     --color-highlight-light: #e5651d;

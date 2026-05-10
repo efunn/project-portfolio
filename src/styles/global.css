@@ -3,14 +3,14 @@
 @layer global {
 
   html {
-    background-color: light-dark(var(--color-white), var(--color-black));
+    background-color: light-dark(var(--color-white-bg), var(--color-black-bg));
   }
 
   header {
     z-index: 999;
     top: 0;
     position: sticky;
-    background-color: light-dark(var(--color-white), var(--color-black));
+    background-color: light-dark(var(--color-white-bg), var(--color-black-bg));
   }
 
   body {
@@ -34,7 +34,6 @@
     font-size: var(--step-3);
   }
 
-  a,
   blockquote,
   ul,
   ol,
@@ -42,9 +41,13 @@
     font-family: "Inter Variable", sans-serif;
     font-size: var(--step-0);
     hyphens: none;
+    color: light-dark(var(--color-black), var(--color-white));
   }
 
   a {
+    font-family: "Inter Variable", sans-serif;
+    font-size: var(--step-0);
+    hyphens: none;
     color: light-dark(var(--color-highlight-light), var(--color-highlight-dark));
   }
 

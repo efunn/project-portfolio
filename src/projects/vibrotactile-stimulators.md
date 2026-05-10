@@ -5,7 +5,7 @@ id: p6
 icon: vibrator
 ---
 
-**Project Link: [github.com/efunn/vibrotactile-stim](https://github.com/efunn/vibrotactile-stim)**
+**Project Link: <a href="https://github.com/efunn/vibrotactile-stim" target="_blank">github.com/efunn/vibrotactile-stim</a>**
 
 ![vibrotactile stimulator banner](@images/vibe-banner.jpg)
 

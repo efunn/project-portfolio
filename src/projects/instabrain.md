@@ -4,7 +4,7 @@ subtitle: A system to decode brain states in real time
 id: p3
 icon: instabrain
 ---
-**Project Link: [github.com/lewispeacocklab/instabrain](https://github.com/lewispeacocklab/instabrain)**
+**Project Link: <a href="https://github.com/lewispeacocklab/instabrain" target="_blank">github.com/lewispeacocklab/instabrain</a>**
 
 ![instabrain banner](@images/mri-banner.jpg)
 

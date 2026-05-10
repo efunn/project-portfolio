@@ -5,7 +5,7 @@ id: p5
 icon: rifling
 ---
 
-**Project Link: [github.com/efunn/gaintwist-rifling](https://github.com/efunn/gaintwist-rifling)**
+**Project Link: <a href="https://github.com/efunn/gaintwist-rifling" target="_blank">github.com/efunn/gaintwist-rifling</a>**
 
 ![rifling banner](@images/rifling-banner.jpg)
 

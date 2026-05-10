@@ -5,7 +5,7 @@ id: p4
 icon: keyboard
 ---
 
-**Project Link: [github.com/lewispeacocklab/rewire-keyboard](https://github.com/lewispeacocklab/rewire-keyboard)**
+**Project Link: <a href="https://github.com/lewispeacocklab/rewire-keyboard" target="_blank">github.com/lewispeacocklab/rewire-keyboard</a>**
 
 ![keyboard banner](@images/keyboard-banner.jpg)
 
