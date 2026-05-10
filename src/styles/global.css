@@ -63,6 +63,24 @@
 
   a:hover::after { 
     transform: translate(0.15rem,-0.15rem);
-   }
+  }
+
+  div.emailtag {
+    font-size: var(--step-0);
+    display: inline;
+    font-weight: bold;
+    color: light-dark(var(--color-black), var(--color-white));
+  }
+
+  div.email {
+    font-size: var(--step-0);
+    display: inline;
+    font-weight: bold;
+    color: light-dark(var(--color-highlight-light), var(--color-highlight-dark));
+  }
+
+  div.email > span:nth-child(2) {
+    display: none;
+  }
 }
 
