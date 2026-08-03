@@ -5,7 +5,7 @@ id: p2
 icon: robot
 ---
 
-**Project Link: <a href="https://github.com/efunn/robotic-finger-interface" target="_blank">github.com/efunn/robotic-finger-interface</a>**
+**Project Link: <a href="https://github.com/efunn/robotic-keyboard" target="_blank">github.com/efunn/robotic-keyboard</a>**
 
 ![robotic keyboard banner](@images/robot-banner.jpg)
 
